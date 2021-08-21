@@ -1,3 +1,5 @@
+import './styles/index.scss';
+
 const person = {
   name: 'Ridho',
   age: 29,
