@@ -4,12 +4,12 @@ const mode = process.env.NODE_ENV === "production" ? "production" : "development
 const target = process.env.NODE_ENV === "production" ? "browserslist" : "web";
 
 module.exports = {
-  mode, // "production" || "development"
+  mode,
   target,
   module: {
     rules: [
       {
-        test: /\.s?css$/i,
+        test: /\.(s[ac]|c)ss$/i, // sass || scss || css
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
