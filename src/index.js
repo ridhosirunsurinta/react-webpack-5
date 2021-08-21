@@ -1,3 +1,16 @@
-const message = 'Hello World!';
+const person = {
+  name: 'Ridho',
+  age: 29,
+};
 
-console.log(message);
+const pet = {
+  owner: {
+    ...person,
+    age: 30,
+  },
+  name: 'Luna',
+  age: 1,
+  breed: 'Corgi',
+};
+
+console.log(pet);
